@@ -1,0 +1,20 @@
+.vermelho {
+    color: red;
+    font-style: 
+}
+h1.vermelho{
+    font-style: vermelho;
+}
+
+.negrito{
+    font-weight: bold;
+}
+p{
+    font-family: cursive;
+}
+
+#quartop{
+    font-family: monospace;
+    color: greenyellow;
+    background-color: black
+}
