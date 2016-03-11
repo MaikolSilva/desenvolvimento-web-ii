@@ -1,0 +1,24 @@
+#div{
+    background-image:url(img.jpg);
+    width: 250px;
+    height: 250px;
+    border-radius: 205px;
+    backface-size: 400px;
+    box-shadow: 10px 10px; 
+}
+body{
+    background-image: url(lua.jpg), url(symbol.png);
+    background-position: right bottom, left right;
+    background-repeat: repeat , no-repeat;
+    background-size: auto, 50px;
+}
+@media only screen and(max-width: 500px){
+    #div{
+    background-image:url(img.jpg);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    backface-size: 150px;
+    box-shadow: 2px 2px ;
+    }
+}
