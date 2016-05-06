@@ -1,0 +1,40 @@
+<div class="container" ng-controller="LoginCtrl">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="panel panel-success">
+                <div class="panel-heading">Informe as suas credenciais</div>
+                <div class="panel-body">
+                    <uib-alert ng-repeat="alert in alerts" type ="danger" close="closeAlert($index)">{{alert}}</uib-alert>
+                    <form>
+                        <div class="form-group">
+                            <label class="sr-only" for="email">Email</label>
+                            <div class="input-group">
+                                <input type="email" class="form-control" id="email" placeholder="Informe o seu Email de Cadastro">
+                                <div class="input-group-addon">@</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="senha">Senha</label>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="senha" placeholder="Informe o sua senha">
+                                <div class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></div>
+                            </div>
+                        </div>
+                        <div class="pull-right">
+                            <div class="btn-group" role="group">
+                                <button class="btn btn-success">Entrar</button>
+                                <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Esqueci minha senha</a></li>
+                                    <li><a href="#">Cadastrar</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
